@@ -156,13 +156,12 @@ class Review {
 }
 
 class User {
-  constructor(id, name, email, password, role = "customer", orders = []) {
+  constructor(id, name, email, password, role = "customer") {
     this.id = id;
     this.name = name;
     this.email = email;
     this.password = password;
     this.role = role;
-    this.orders = orders;
   }
 
   static create = (name, email, password) => {
